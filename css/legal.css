@@ -1,0 +1,55 @@
+:root{
+    --green-color: rgb(84,135,42);
+    --blue-color: rgb(28,33,51);
+    --yellow-color: rgb(255,255,66);
+    /*Espaciado*/
+    --space: 10Px;
+    --box: 0px 0 2px 1px#e6e5e9;
+    }
+    
+
+    .azul {
+        border: 5px solid transparent;/*red;*/
+        background-color: var(--green-color);
+        text-align: center;
+        color: var(--yellow-color);
+        letter-spacing: 3px;
+        font-size: 25px;
+        font-weight:lighter;
+        font-family: Gayathri;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 125vh; /*   para que el ancho sea el de la pantalla*/
+        }
+        
+        .impressum{
+            text-align: left;
+            padding: 7%;
+            font-weight: lighter;
+            font-size: 18px;
+            letter-spacing: 4px;
+        }
+        
+        .content_legal a {
+        margin-top:-400px;
+        color: whitesmoke;
+        text-decoration: none;
+        padding-bottom: 3%;
+        }
+
+        .legal_p{
+            color:yellow;
+            text-align: left;
+            padding-left: 7%;
+        }
+
+        a{
+            transition: .3s ease all;
+        }
+        a:hover { /* PARA QUE LA LETRA SE PONGA BLANCA Y SE EXPANDA*/
+            font-size: 35px;
+            letter-spacing: 2px;
+            color: whitesmoke;
+        }
+        

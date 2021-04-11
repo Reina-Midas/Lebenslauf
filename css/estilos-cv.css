@@ -1,0 +1,290 @@
+/*------VARIABLES ELEMENTOS QUE SE REPITEN--------*/
+
+
+:root{
+    --green-color: rgb(84,135,42);
+    --blue-color: rgb(28,33,51);
+    --yellow-color: rgb(255,255,66);
+    /*Espaciado*/
+    --space: 10Px;
+    --box: 0px 0 2px 1px#e6e5e9;
+    }
+
+    /*------VARIABLES ELEMENTOS QUE SE REPITEN--------*/
+
+
+    html, body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    font-family: Gayathri;
+    }
+
+
+
+    body {
+    /*background-color: whitesmoke;*/
+    background-image: linear-gradient(45deg, rgb(230, 192, 70), rgb(248, 241,241));
+    /*background-color: rgb(230, 211, 166); /*FONDO DE TODO*/
+    }
+
+    nav{
+        display: flex;
+        background-color: var(--green-color);
+        padding: 10px;
+        color: white;
+        justify-content: center;/* o space bet para distribuirlos*/
+        align-items: center;
+        /* position: sticky; /*PARA FIJARLO*/
+        top: 0;
+    }
+
+
+    nav a {
+        text-decoration: none;
+    }
+
+a{
+    padding-left: 50px;
+}
+
+    nav ul{
+    display: flex;
+    }
+
+    nav li {
+    padding-left: 10%;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    }
+
+    nav li a {
+        /*display: inline-block;*//* CON ESTE Y TRANSFORM SE LOGRA UN EFECTO DE MOV EN LA BARRA*/
+        color: white;
+        text-decoration: none;
+        letter-spacing: 2px;
+        padding: 10px;
+        font-size: 30px;
+        font-weight: 400;
+
+        }
+
+        nav li a:hover{
+        /*transform: translateY(3px);
+        background-color: blueviolet;*/
+        color: var(--yellow-color);
+        }
+
+    h1{
+        color: var(--yellow-color);
+        font-family: Mate SC;
+        font-size: 45px;
+        letter-spacing: 10px;
+        font-weight: lighter;
+        padding-left: var(--space);
+    }
+
+    h1:hover{
+        color: white;
+    }
+    /*--------Main Section------------*/
+
+.main-section{
+    padding: -3%; /* con este se pego a la barra principal*/
+    text-align: center;
+    }
+
+    .product{
+    /*padding: 20px;*/
+    margin-top:-100px;
+    margin: 5px;
+    background-color: transparent; /*red;*/
+    border: 1px solid transparent; /*black;*/
+    width: auto;
+    height: auto;
+    flex-shrink: 1
+    }
+
+    .content{
+    padding: 25px;
+    background: transparent; /*white;*/
+    border-radius: 3px;
+    /*box-shadow: 0px 0 2px 1px #e6e5e9;
+    align-items: baseline;
+    flex-wrap: wrap;*/
+    }
+
+    .image-content {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    vertical-align: baseline;
+    }
+
+
+    .titulo{
+        transition: .3s ease all;
+    }
+    .titulo:hover { /* PARA QUE LA LETRA SE PONGA BLANCA Y SE EXPANDA*/
+        font-size: 35px;
+        letter-spacing: 2px;
+        color:whitesmoke;
+    }
+
+    .uno{
+    transition: .3s ease all;
+    }
+    .uno:hover { /* PARA QUE LA LETRA SE PONGA NARANGA Y SE EXPANDA*/
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: orangered;
+    }
+
+    p{
+    /*height: 70px; /* EN ESTE EJEMPLO LO USO PARA QUE EL TAM SEA UNIFORME*/
+    color: rgba(36, 33, 33, 0.801);
+    font-weight: bold;
+    text-align:inherit;
+    }
+
+    .img {
+        display: inline-block;
+        margin: 0 auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        object-fit: cover;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+
+    h3.titulo{
+    color: black;
+    text-align: center;
+    }
+
+    .description{
+    text-align: center;
+    }
+
+
+    .main_button{
+    background-color: var(--green-color);
+    width: 25%;
+    margin-left: -60px;
+    justify-items: left;
+    justify-content: left;
+    padding: var(--space);
+    font-size: 25px;
+    color: white;
+    border:0;
+    cursor: pointer;/* PARA LA MANITO DEL MAUSE*/
+    border-radius: 3px;
+    }
+
+    .main_button:hover{
+    background-color: goldenrod;
+    }
+
+/*--------Main Section END------------*/
+
+
+/*--------- SERVICE--------*/
+.services {
+width: inherit;
+display: flex;
+justify-content: space-evenly;
+padding:var(--space);
+background-color: transparent; /*yellow;*/
+}
+
+.service img{
+object-fit: cover;
+border-radius: 15px;
+}
+
+
+h2.service_title{
+margin-top: 70px;
+font-size: 40px;
+text-align: center;
+}
+
+/*.content_service{
+width: 100%;
+box-shadow: 0px 0 2px 1px #e6e5e9;
+}*/
+
+.service, .text{
+width: 330px;
+padding: var(--space);
+text-align: center;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/*----END SERVICE----*/
+
+/*--------- EXPERIENCE--------*/
+
+.button{
+    background-color: var(--green-color);
+    align-items: center;
+    width: 245px;
+    height: 45px;
+    margin-top: 30%;
+    padding: var(--space);
+    font-size: 20px;
+    color: white;
+    border:0;
+    cursor: pointer;/* PARA LA MANITO DEL MAUSE*/
+    border-radius: 3px;
+    }
+
+    .button:hover{
+    background-color: goldenrod;
+    }
+
+/*--------- END EXPERIENCE--------*/
+
+
+/*------------------------------------------- Footer */
+
+footer{
+    height: 100px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: var(--normal);
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding: var(--space);
+    padding-top: 70px;
+    color: var(--white-color);
+    }
+
+.footer{
+    background-color: var(--green-color);
+    color: var(--yellow-color);
+    font-family: Mate SC;
+}
+
+
+
+.legal{
+    color: var(--yellow-color);
+    text-decoration: none;
+}
+
+.contact {
+    color:var(--yellow-color)
+
+}
+
+
+  /* --------------------------End Footer */
