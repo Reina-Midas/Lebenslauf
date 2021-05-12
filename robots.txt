@@ -125,4 +125,4 @@ Disallow: /
 
 
 
-https://reina-midas.github.io/Lebenslauf/sitemap
+sitemap: https://reina-midas.github.io/Lebenslauf/sitemap
